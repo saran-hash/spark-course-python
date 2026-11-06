@@ -1,9 +1,7 @@
 
 import os
 import sys
-
 python_path = sys.executable
-
 os.environ["PYSPARK_PYTHON"] = python_path
 os.environ["PYSPARK_DRIVER_PYTHON"] = python_path
 from pyspark.sql import SparkSession
